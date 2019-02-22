@@ -14,12 +14,31 @@
 	}
 
 	.col {
-		flex: 1;
+		flex: 1 50%;
     flex-direction: column;
 	}
 
-  .button {
-    margin-top: auto;
+  .row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+ /* -------Button Placement-------- */
+
+   .button {
+     margin-top: auto;
+   }
+
+  .btn-1 {
+    align-self: flex-start;
+  }
+
+  .btn-2 {
+    align-self: center;
+  }
+
+  .btn-3 {
+    align-self: flex-end;
   }
 
 }
@@ -31,6 +50,17 @@
 		justify-content: space-between;
 	}
 
+  .col {
+    flex-basis: 0;
+  }
+
+  .primary {
+    flex-grow: 2;
+  }
+
+  .secondary {
+    order: -1;
+  }
 }
 
 
@@ -50,8 +80,7 @@
 
   .col {
     flex: 1 50%;
-    /* align-items: flex-end; */
-  /* }
+  }
 
   .row {
     flex-wrap: wrap;
