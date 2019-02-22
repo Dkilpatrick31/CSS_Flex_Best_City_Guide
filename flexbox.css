@@ -2,7 +2,8 @@
 
 @media (min-width: 769px) {
   .main-header,
-  .main-nav {
+  .main-nav,
+  .row {
     display: flex;
   }
 
@@ -11,12 +12,16 @@
     align-items: center;
   }
 
-  .row {
-    display: flex;
+  .col {
+    flex: 1 50%;
   }
 
-  .col {
-    flex: 1;
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .secondary {
+    order: -1;
   }
 }
 
@@ -26,11 +31,12 @@
     justify-content: space-between;
   }
 
-  .primary {
-    flex: 2;
+  .col {
+    flex-basis: 0;
   }
 
-  .secondary {
-    order: -1;
+  .primary {
+    flex-grow: 2;
   }
+
 }
